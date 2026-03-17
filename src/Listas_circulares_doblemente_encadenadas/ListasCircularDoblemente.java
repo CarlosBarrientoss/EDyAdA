@@ -7,13 +7,26 @@ public class ListasCircularDoblemente {
     /*Insertar en lista circular doble*/
     public void insertar(int dato) {
 
+                            // 10, 20, 30, 40
         Nodo nuevo = new Nodo(dato);
 
-        if (cabeza == null) {
+        //nuevo = [this | 20 | this]
+        //nuevo = [this | 30 | this]
+        //nuevo = [this | 40 | this]
 
+        if (cabeza == null) {
+            //[this | 10 | this]
             cabeza = nuevo;
+            cabeza.anterior = nuevo;
+            cabeza.siguiente = nuevo;
+            //[10 | 10 | 10]
 
         } else {
+
+            //cabeza = [40 | 10 | 20] <-> [ 10 | 20 | 30 ] <-> [ 20 | 30 | 40 ] <-> [ 30 | 40 | 10 ]
+            //
+             //ultimo = 20
+             //ultimo = 30
 
             Nodo ultimo = cabeza.anterior;
 

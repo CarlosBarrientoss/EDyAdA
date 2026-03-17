@@ -6,11 +6,13 @@ public class ListaDoblemente {
 
     /*insertar nodos*/
     public void insertarInicio(int dato) {
-                        //100 - 200
+
+         //10-20-30
         Nodo nuevo = new Nodo(dato);
 
-        //[anterior | dato | siguiente]
-        //[ null    |  100 | null ]
+        //nuevo = [ null | 10 | null]
+        //nuevo = [ null | 20 | 10]
+        //nuevo = [ null | 30 | 20]
 
         if (cabeza != null) {
             cabeza.anterior = nuevo;
@@ -18,12 +20,14 @@ public class ListaDoblemente {
         }
 
         cabeza = nuevo;
+
+        //cabeza = [ null | 30 | 20] <-> [ 30 | 20 | 10] <-> [ 20 | 10 | null]
     }
-
-
 
     /*Recorrer lista hacia adelante*/
     public void recorrer() {
+
+        //cabeza = [ null | 30 | 20] <-> [ 30 | 20 | 10] <-> [ 20 | 10 | null]
 
         Nodo actual = cabeza;
 
@@ -32,6 +36,7 @@ public class ListaDoblemente {
             System.out.print(actual.dato + " -> ");
             actual = actual.siguiente;
 
+            //imprimir : 30, 20,
         }
 
     }
@@ -39,16 +44,22 @@ public class ListaDoblemente {
     /*Recorrer la lista hacia atrás*/
     public void recorrerAtras() {
 
+        //cabeza = [ null | 30 | 20] <-> [ 30 | 20 | 10] <-> [ 20 | 10 | null]
+
         Nodo actual = cabeza;
 
         while (actual.siguiente != null) {
             actual = actual.siguiente;
         }
 
+        //cabeza = [ null | 30 | 20] <-> [ 30 | 20 | 10] <-> [ 20 | 10 | null]
+
         while (actual != null) {
 
             System.out.print(actual.dato + " <- ");
             actual = actual.anterior;
+
+            //imprimir: 10, 20, 30
 
         }
 
