@@ -1,4 +1,4 @@
-package Concepto_de_listas;
+package Listas_conceptos;
 
 public class Nodo {
 

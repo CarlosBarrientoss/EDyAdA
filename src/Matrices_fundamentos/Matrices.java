@@ -1,4 +1,4 @@
-package Fundamentos_de_matrices;
+package Matrices_fundamentos;
 
 public class Matrices {
 
@@ -11,9 +11,9 @@ public class Matrices {
         };
 
         for(int i = 0; i < matriz.length; i++){
-            for(int j = 0; j < matriz[i].length; j++){
+            for(int j = 0; j < matriz.length; j++){
                 System.out.print(matriz[i][j] + " ");
-            }
+            } 
             System.out.println();
         }
 

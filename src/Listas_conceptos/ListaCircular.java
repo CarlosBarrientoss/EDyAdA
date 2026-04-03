@@ -1,4 +1,4 @@
-package Concepto_de_listas;
+package Listas_conceptos;
 
 public class ListaCircular {
 
@@ -144,7 +144,7 @@ public class ListaCircular {
         }
 
         int contador = 0;
-        Concepto_de_listas.Nodo actual = cabeza;
+        Listas_conceptos.Nodo actual = cabeza;
 
         do {
 

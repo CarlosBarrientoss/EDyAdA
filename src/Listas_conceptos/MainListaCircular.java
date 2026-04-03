@@ -1,10 +1,10 @@
-package Concepto_de_listas;
+package Listas_conceptos;
 
 public class MainListaCircular {
 
     public static void main(String[] args) {
 
-            Concepto_de_listas.ListaCircular lista = new Concepto_de_listas.ListaCircular();
+            Listas_conceptos.ListaCircular lista = new Listas_conceptos.ListaCircular();
 
             lista.insertar(10);
             lista.insertar(20);
