@@ -13,28 +13,28 @@ public class ListaCircular {
 
 
     /*INSERTAR EN UNA LISTA CIRCULAR*/
-                          //[1][2][3][4][0]
+
     public void insertar(int dato) {
-            //[1][2][3][4][0]
+
         Nodo nuevo = new Nodo(dato);
 
         if (cabeza == null) {
-            //[1]
+
             cabeza = nuevo;
-            //[1]
+
             nuevo.siguiente = cabeza;
 
         } else {
-            //[1]
+
             Nodo actual = cabeza;
-            //[2]
+
             while (actual.siguiente != cabeza) {
                 //[4]
                 actual = actual.siguiente;
             }
-            //[4]
+
             actual.siguiente = nuevo;
-            //[1]
+           
             nuevo.siguiente = cabeza;
         }
     }
