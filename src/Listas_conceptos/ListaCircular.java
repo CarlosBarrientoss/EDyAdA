@@ -34,7 +34,7 @@ public class ListaCircular {
             }
 
             actual.siguiente = nuevo;
-           
+
             nuevo.siguiente = cabeza;
         }
     }
